@@ -149,7 +149,7 @@ h6 {
   margin-top: 10px;
   text-align: center;
 }
-.searchbar {
+/*.searchbar {
   border: 1px #9B9B9B solid;
   width: 807px;
   height: 40px;
@@ -158,6 +158,10 @@ h6 {
   align-items: center;
   font-weight: 300;
   padding-left: 15px;
+}*/
+
+.search2 {
+  left: 396px; top: 153px; width: 807px; height: 40px; padding-left: 15px;
 }
 
 .alpha {

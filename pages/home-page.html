@@ -10,6 +10,7 @@
     <link rel="icon" href="#">
     <meta name="description" content="#">
     <link rel="stylesheet" href="library/css/main.css">
+    <link rel="stylesheet" href="library/css/mobile/home-page-mobile.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 </head>
@@ -45,10 +46,19 @@
 	<div class="main-tittle">
 		<h1 class="home-tittle">SAFE, FREE MARKET POWERED BY THE ETHEREUM BLOCKCHAIN</h1>
 		<a class="home-sublink" href="#">Learn more about how can you benefit from the technology >></a>
-		<div class="searchbar-aera">
+<!-- 		<div class="searchbar-aera">
 			<h6 class="searchbar"> Input a store name </h6>
 			<h6 class="alpha"> In the alpha version, we only support store searching. More function is coming soon! </h6>
-		</div>
+		</div> -->
+
+		<form id="frmSearch" class="search2" method="get" action="default.html" />
+		<input class="search2" id="txtSearch" type="text" name="serach_bar" size="31" maxlength="255"       
+		value="" placeholder="Input a store name"/>
+<!-- 		<input class="search1" type="submit" name="submition" value="Search" style=" padding- 
+		bottom:20px; left: 691px; top: 153px; height: 23px" /> -->
+		<input class="search2" type="hidden" name="sitesearch" value="default.html" />
+
+
 	</div>
 <!-- Main Tittle + Search Bar End -->
 
@@ -88,24 +98,24 @@
 
 	<h4 class="featured-stores-tittle">Featured Stores</h4>
 	<div class="featured-stores">
-		<div>
+		<div class="featured-stores-grid">
 			<a href="#"><img class="store-img" src="library/img/orange.png" /></a>
-			<h4>From <a href="#" class="store-name">Cali Orange Store</a></h4>
+			<h4>From <a href="#" class="featured-store-name">Cali Orange Store</a></h4>
 			<h4 class="store-description">A description of the store, better one or two sentence.</h4>
 		</div>
-		<div>
+		<div class="featured-stores-grid">
 			<a href="#"><img class="store-img" src="library/img/orange.png" /></a>
-			<h4>From <a href="#" class="store-name">Cali Orange Store</a></h4>
+			<h4>From <a href="#" class="featured-store-name">Cali Orange Store</a></h4>
 			<h4 class="store-description">A description of the store, better one or two sentence.</h4>
 		</div>
-		<div>
+		<div class="featured-stores-grid">
 			<a href="#"><img class="store-img" src="library/img/orange.png" /></a>
-			<h4>From <a href="#" class="store-name">Cali Orange Store</a></h4>
+			<h4>From <a href="#" class="featured-store-name">Cali Orange Store</a></h4>
 			<h4 class="store-description">A description of the store, better one or two sentence.</h4>
 		</div>
-		<div>
+		<div class="featured-stores-grid">
 			<a href="#"><img class="store-img" src="library/img/orange.png" /></a>
-			<h4>From <a href="#" class="store-name">Cali Orange Store</a></h4>
+			<h4>From <a href="#" class="featured-store-name">Cali Orange Store</a></h4>
 			<h4 class="store-description">A description of the store, better one or two sentence.</h4>
 		</div>				
 	</div>

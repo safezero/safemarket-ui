@@ -39,8 +39,11 @@
       font-size: 12px;
       line-height: 19px;
     }
-    .searchbar {
+/*    .searchbar {
       width: 325px;
+    }*/
+    .search2 {
+    width: 300px; 
     }
     .Feature {
       justify-content: center;
