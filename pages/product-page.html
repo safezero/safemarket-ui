@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SafeMarket</title>
+    <!-- favicon -->
+    <link rel="icon" href="">
+    <meta name="description" content="#">
+    <link rel="stylesheet" href="library/css/main.css">
+    <link rel="stylesheet" href="library/css/product-page-mobile.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!-- Navigation bar V2 - with search bar, not login -->
+<!-- Add sticky header js -->
+<header>
+	<div class="nav">
+		<div class="nav-left">
+			<div class="nav-left-top">
+				<a class="nav-title" href="#">SafeMarket</a>
+
+				<div class="nav-searchbar">
+					<img class="nav-search-bar" src="library/img/search-bar.png" />
+					<h6 class="nav-search-input">Input a store name</h6>
+				</div>
+			</div>
+			<div class="connection-status">
+				<div class="network-status">
+					<h6> Network Status: </h6>
+					<img class="connected" src="library/img/network-right.png" />
+					<a href="#" class="status"> IPFS connected</a>
+				</div>
+				<a class="change-network" href="#">Change network</a>
+			</div>
+		</div>
+		<div class="nav-right">
+			<a class="nav-link nav-item" href="#">Sell on SafeMarket</a>
+			<a class="nav-link nav-item" href="#">Log in</a>
+			<img class="nav-line" src="library/img/nav-line.png" />
+			<div class="cart-group">
+				<a href="#"><img class="cart-img" src="library/img/cart.png" /></a>
+				<a class="nav-link" href="#">Cart</a>
+			</div>
+			<a class="nav-link nav-item" href="#">What is SafeMarket?</a>
+		</div>	
+	</div>
+</header>
+<!-- Navigation bar V2 End -->
+
+<!-- Product Page -->
+
+<!-- This one is more mobile version to show product name and price. Css is added. You can use Js to show this giv in the mobile breakpoint -->
+
+<!-- 	<div class="mobile-one">
+		<p class="product-name-mobile">Satoshi Cookies</p>
+		<div class="product-price-mobile">
+			<p class="product-price-usd-mobile">$ 6</p>
+			<p class="product-price-eth-mobile">0.1 ETH</p>
+		</div>
+	</div> -->
+
+
+<div class="product-page">
+
+	<div class="product-gallery">
+		<div class="gallery-main">
+			<img class="gallery-main" src="library/img/product-img-2.png" />
+		</div>
+		<div class="gallery-preview">
+			<img class="product-previews" src="library/img/product-img-2.png" />
+			<img class="product-previews" src="library/img/product-img-2.png" />
+			<img class="product-previews" src="library/img/product-img-2.png" />
+			<img class="product-previews" src="library/img/product-img-2.png" />
+		</div>
+
+		<!-- Remove this div in mobile breakpoint 414 -->
+		<div class="store-brif">
+			<a class="store-brif-name" href="#">Satoshisbakery</a>
+			<p class="store-brif-description">Description of the shop</p>	
+		</div>
+		<!-- Remove this div in mobile breakpoint 414 -->
+	</div>
+
+
+	<div class="Product-info">
+
+	<!-- Remove this div in the mobile breakpoint, from here-->
+		<div class="product-info-hide">
+			<p class="product-name">Satoshi Cookies</p>
+			<div class="product-price">
+				<p class="product-price-usd">$ 6</p>
+				<p class="product-price-eth">0.1 ETH</p>
+			</div>
+		</div>
+	<!-- To here -->
+
+		<div class="choose-quantity">
+			<div class="availability">78 avaiable in Stock</div>
+			<div class="quantity">
+				<p class="quantity-text">Quantity</p>
+				<div class="quantity-selction-box">
+					<form id='myform' method='POST' action='#'>
+					    <input type='button' value='-' class='qtyminus' field='quantity' />
+					    <input type='text' name='quantity' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity' />
+					</form>			
+				</div>
+			</div>	
+		</div>
+		<div class="buy-cart-btns">
+			<div class="product-btn left-btn">
+				<a href="#">Add to Cart</a>
+			</div>
+			<div class="product-btn">
+				<a href="#">Buy Now</a>
+			</div>
+		</div>
+		<div class="store-header-grid">
+			<a href="#"><img class="info-icon" src="library/img/contact-icon.png" /></a>
+			<a class="info-text">Contact Shop owner</a>
+		</div>
+
+		<div class="product-nav">
+		  <ul class="product-nav-ul">
+		    <li class="description"><a class="inpage-nav front-nav" href="#">Description</a></li>
+		    <li class="shipping"><a class="inpage-nav last-nav" href="#">Shipping</a></li>
+		 	<li class="return-policy"><a class="inpage-nav last-nav" href="#">Return Policy</a></li>
+		    <hr class="inpage-hr" />
+		  </ul>
+		
+		<!-- Each nav above link to a paragrah in this section, might need some js to show the paragraph -->
+
+			<p class="product-nav-description">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus </p>
+
+<!-- 		<div class="product-nav-shipping">
+				<p class="about-header">Basic shipping</p>
+				<p class="info-text">7-15 business days, 10 USD</p>
+				<p class="about-header">Express shipping</p>
+				<p class="info-text">7-15 business days, 10 USD</p>
+			<div> -->
+		
+			<!-- <p class="product-nav-return">Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus </p> -->
+		</div>
+
+		<!-- Add this div for mobile breakpoint 414px;	 -->	
+<!-- 		<div class="store-brif-mobile">
+			<a class="store-brif-name" href="#">Satoshisbakery</a>
+			<p class="store-brif-description-mobile">Description of the shop</p>	
+		</div>	 -->
+		
+	</div>
+
+</div>
+		
+	
+
+
+
+
+
+
+<!-- Store page end -->
+
+<!-- Featured stores end -->
+
+     <!--  footer -->
+	<div class="footer">
+      <div class="footer-container">
+        <p>Copyright © <strong>ConsenSys 2017</strong>. All right reserved.</p>
+       	<div class="footer-right">
+        	<p>A <strong>ConsenSys</strong> formation.</p> 
+        	<img class="footer-logo" src="library/img/logo-footer.png" />
+        </div>
+      </div>
+    </div>
+
+
+   
+
+ 
+ 
+   
+    <script src="library/js/remove-class.js"></script>
+
+
+  </body>
+</html>
