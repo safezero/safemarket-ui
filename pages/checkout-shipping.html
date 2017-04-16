@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SafeMarket</title>
+    <!-- favicon -->
+    <link rel="icon" href="#">
+    <meta name="description" content="#">
+    <link rel="stylesheet" href="/library/css/main.css">
+    <link rel="stylesheet" href="/library/css/mobile/checkout-mobile.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<div class="nav">
+			<div class="nav-left">
+				<div class="nav-left-top">
+					<a class="nav-title" href="#">SafeMarket</a>
+
+					<div class="nav-searchbar">
+						<img class="nav-search-bar" src="/library/img/search-bar.png" />
+						<h6 class="nav-search-input">Input a store name</h6>
+					</div>
+				</div>
+				<div class="connection-status">
+					<div class="network-status">
+						<h6> Network Status: </h6>
+						<img class="connected" src="/library/img/network-right.png" />
+						<a href="#" class="status"> IPFS connected</a>
+					</div>
+					<a class="change-network" href="#">Change network</a>
+				</div>
+			</div>
+			<div class="nav-right">
+				<a class="nav-link nav-item" href="#">Sell on SafeMarket</a>
+				<a class="nav-link nav-item" href="#">Log in</a>
+				<img class="nav-line" src="/library/img/nav-line.png" />
+				<div class="cart-group">
+					<a href="#"><img class="cart-img" src="/library/img/cart.png" /></a>
+					<a class="nav-link" href="#">Cart</a>
+				</div>
+				<a class="nav-link nav-item" href="#">What is SafeMarket?</a>
+			</div>	
+		</div>
+	</header>
+
+	<div class="checkout-ship">
+
+		<div class="checkout-ship-left">
+			<div class="stepper-container">
+				<div class="stepper-img-container">
+					<img class="stepper-shipping-img" src="/library/img/stepper-1.png" />
+				</div>
+				<div class="stepper-text-container">
+					<p class="stepper-text stepper-active">SHIPPING</p>
+					<p class="stepper-text">LOG IN/SIGN UP</p>
+					<p class="stepper-text">PAYMENT</p>
+				</div>
+			</div>
+			<div class="shipping-container">
+				<form action="/action_page.php">
+					<p class="inputbox-text">Enter your shipping address:</p> 
+					<input class="shipping-address" type="text" name="ShippingAddress" placeholder="Full Name / APT. Street, City, State. / Zip code. Country"><br />
+					<p class="inputbox-text">Transport:</p> 
+					<input type="text" class="transport-input" id="transport-options" value="" /> <br />
+					<!-- See the tranport-selector.js -->
+				</form>
+			</div>
+			<div class="buffer">
+				<p class="inputbox-text">Exchange Rate Buffer set by this store: 10% </p> 
+				<img class="question-icon" src="/library/img/question-icon.png" />
+			</div>
+			<div class="btns">
+				<div class="checkout-btn-left sml-btn">
+					<a class="ml-btn-left" href="#">Next</a>
+				</div>
+				<div class="checkout-btn-right sml-btn">
+					<a class="ml-btn-right" href="#">Go back to cart</a>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="checkout-ship-right">
+			<div class="checkout-order-container">
+				<div class="order-number">
+					<h4 class="ordernumber"> Your Order #1234abcdef </h4>
+				</div>
+
+				<div class="checkout-order-info">
+					<div class="checkout-order-warp">
+						<p class="checkout-order-bdtext">Satoshisbakery
+						</p>
+						<p class="checkout-order-bdtext">$12</p>
+					</div>
+					<div class="checkout-order-productinfo">
+						<img class="checkout-order-img" src="/library/img/product-sml.png">
+						<div class="checkout-order-productinfo-right">
+							<p class="checkout-order-text">Satoshi cookie</p>
+							<p class="checkout-order-text">Quantity: 1</p>
+							<p class="checkout-order-text">$6</p>
+						</div>
+					</div>
+					<div class="checkout-order-productinfo">
+						<img class="checkout-order-img" src="/library/img/product-sml.png">
+						<div class="checkout-order-productinfo-right">
+							<p class="checkout-order-text">Satoshi cookie</p>
+							<p class="checkout-order-text">Quantity: 1</p>
+							<p class="checkout-order-text">$6</p>
+						</div>
+					</div>
+					<div class="checkout-order-shipop">
+						<div class="checkout-order-warp">
+							<p class="checkout-order-bdtext">shipping
+							</p>
+							<p class="checkout-order-storename">$10</p>
+						</div>
+						<p class="checkout-order-text">Basic shipping (7-10days)</p>
+					</div>
+					<div class="checkout-order-warp">
+						<p class="checkout-order-bdtext">Exchange Rate Buffer
+						</p>
+						<p class="checkout-order-bdtext">$1.20</p>
+					</div>
+				</div>
+				<div class="checkout-order-price">
+					<p class="checkout-order-price-total">Total $23.20</p>
+					<p class="checkout-order-price-eth">2.000 ETH</p>
+					<a href="#" class="checkout-order-edit">Go back edit this order</a>	
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<!--  footer -->
+	<div class="footer">
+      <div class="footer-container">
+        <p>Copyright © <strong>ConsenSys 2017</strong>. All right reserved.</p>
+       	<div class="footer-right">
+        	<p>A <strong>ConsenSys</strong> formation.</p> 
+        	<img class="footer-logo" src="/library/img/logo-footer.png" />
+        </div>
+      </div>
+    </div>
+
+	<script
+  src="http://code.jquery.com/jquery-1.6.4.js"
+  integrity="sha256-VJZPi1gK15WpYvsnBmcV0yga4a0Toov4rt1diFnrrjc="
+  crossorigin="anonymous"></script>
+	<script src="/library/js/transport-selector.js"></script>
+ 
+
+
+</body>
+</html>

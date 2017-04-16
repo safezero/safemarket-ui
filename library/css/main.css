@@ -593,6 +593,137 @@ input.qtyminus { width:40px; height:25px;}
   min-width: 792px;
 }
 
+/*----------------------checktou-shipping-------------*/
+.stepper-container {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stepper-shipping-img {
+  width: 505px;
+}
+.stepper-text {
+  font-size: 10px;
+  font-weight: 300;
+  opacity: 0.36;
+}
+.stepper-text-container {
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+.inputbox-text {
+  font-size: 14px;
+}
+.placeholder {
+  color: #9B9B9B;
+  font-size: 12px;
+  font-weight: 300;
+}
+.shipping-address {
+  width: 510px;
+  height: 94px;
+  border-color: black;
+  padding: 10px;
+}
+.transport-input {
+  border-radius: 0px;
+  width: 510px;
+  height: 38px;
+  border: 2px black solid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.question-icon {
+  width: 15px;
+  height: 15px;
+  margin-top: 16px;
+  margin-left: 10px;
+}
+.buffer {
+  display: flex;
+}
+.checkout-btn-left {
+  width: 194px;
+  height: 40px;
+  background-color: black;
+}
+.checkout-btn-right {
+  width: 194px;
+  height: 40px;
+  margin-left: 20px;
+}
+.ml-btn-left {
+  font-size: 14px;
+  color: white;
+}
+.ml-btn-right {
+  font-size: 14px;
+  color: black;
+}
+.btns {
+  display: flex;
+  margin-top: 20px;
+}
+.checkout-order-container {
+  width: 300px;
+  padding: 20px;
+  padding-bottom: 40px;
+  border: 1px black solid;
+}
+.checkout-order-warp {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-order-text {
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.checkout-order-img {
+  width: 91px;
+  height: 65px;
+  margin-right: 20px;
+}
+.checkout-order-productinfo {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+.order-number {
+  margin-bottom: 20px;
+}
+.checkout-order-price-total {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+.checkout-order-price-eth {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6B6B6B;
+  margin-top: 0px;
+}
+.checkout-order-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.checkout-order-edit {
+  font-size: 12px;
+  font-weight: 300;
+  color: #4990E2;
+  margin-top: 20px;
+}
+.checkout-ship {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-ship-left {
+  margin-right: 30px;
+}
 
 /*Footer*/
 .footer {
